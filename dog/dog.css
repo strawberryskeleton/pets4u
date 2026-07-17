@@ -1,4 +1,11 @@
 
+:root {
+    /* --primary: #9586ac; */
+    --secondary: #fdd6df;
+    --tertiary: #e1f3e8;
+    --primary: #906aca;
+    --primary-2: #864fda;
+}
 
 *,
 *::before,
@@ -6,4 +13,121 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+body {
+    /* width: 100vw; */
+    min-height: 100vh;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../assets/cat-bg3.jpeg');
+    /* background-size: repeat; */
+}
+
+
+header {
+    width: 100%;
+    height: 5rem;
+    /* background-color: aquamarine; */
+    backdrop-filter: blur(3px);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    transition: all 0.2s ease-in;
+}
+
+header button:hover {
+    background-color: var(--primary-2);
+}
+
+
+main {
+    width: 50%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    position: relative;
+    top: -25%;
+    /* left: ; */
+}
+
+main .title {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    color: var(--primary);
+    -webkit-text-stroke: 2px var(--secondary);
+}
+
+.api-div .img-div {
+    width: 100%;
+    height: 30rem;
+    /* background-color: coral; */
+    /* border-radius: 12px; */
+    margin-bottom: 1.5rem;
+}
+
+.api-div .img-div img {
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 12px;
+    border: 1px solid coral;
+}
+
+.api-div .btn-div {
+    width: 50%;
+    margin: 0 auto;
+    /* background-color: darkkhaki; */
+}
+
+.api-div .btn-div button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    transition: all 0.2s ease-in;
+}
+
+.api-div .btn-div button:hover {
+    background-color: var(--primary-2);
+}
+
+
+footer {
+    width: 100%;
+    /* height: 2rem; */
+    padding: 0.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    /* background-color: cadetblue; */
+    backdrop-filter: blur(5px);
+    background-color: var(--secondary);
+    color: var(--primary-2);
+    /* position: absolute;
+    bottom: 0; */
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-2);
+    transition: all 0.2s ease-in;
+}
+
+footer a:hover {
+    color: var(--tertiary);
 }
