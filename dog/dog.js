@@ -1,10 +1,15 @@
 
 const getNewBtn = document.getElementById('get-new-btn')
 const imgDiv = document.getElementById('img-div')
+const bark = new Audio('../assets/bark.mp3')
 
 getNewBtn.addEventListener('click', () => {
     // fetchFromAPI()
     displayAPIResult()
+})
+
+imgDiv.addEventListener('mouseover', () => {
+    bark.play()
 })
 
 async function fetchFromAPI () {
@@ -32,5 +37,7 @@ async function displayAPIResult () {
     // console.log(imgDiv.innerHTML)
 
     imgDiv.innerHTML = `<img src="${imgURL}" alt="dog img">`
-    console.log(imgDiv.innerHTML)
+    // console.log(imgDiv.innerHTML)
+
+    bark.play()
 }
