@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Titan+One&display=swap');
+
+:root {
+    --heading-font: "Titan One", sans-serif;
+    --text-font: "Fredoka", sans-serif;
+
+    --title-color: #712e12;
+    --text-color: #333;
+    --text-color-light: #8f8f8f;
+}
 
 *,
 *::before,
@@ -7,3 +17,93 @@
     box-sizing: border-box;
 }
 
+body {
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: cornflowerblue;
+    font-family: var(--text-font);
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 3rem;
+    font-size: 15rem;
+    color: var(--title-color);
+    /* -webkit-text-stroke: 2px var(--secondary); */
+    letter-spacing: 2px;
+    font-family: var(--heading-font);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.cat-side {
+    width: 50%;
+    height: 100%;
+    background-color: cadetblue;
+    background: url('./assets/cat-bg3.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog-side {
+    width: 50%;
+    height: 100%;
+    background-color: coral;
+    background: url('./assets/dog-bg.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-side a,
+.dog-side a {
+    text-decoration: none;
+    font-size: 22rem;
+    position: relative;
+    top: 10%;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.cat-side a:hover,
+.dog-side a:hover {
+    color: var(--text-color-light);
+} 
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 2rem; */
+    padding: 0.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    /* background-color: cadetblue; */
+    backdrop-filter: blur(5px);
+    /* background-color: var(--secondary); */
+    color: var(--primary);
+    /* position: absolute;
+    bottom: 0; */
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.2s ease-in;
+}
+
+footer a:hover {
+    color: var(--tertiary);
+}
