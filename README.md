@@ -9,7 +9,7 @@ get pets (meow/bhaw) for you on a single key press (any key), because who doesn'
 - hover sound effects of meow and bark
 - aesthetic design (i tried my best guys)
 - split ui in home page
-- img background in hoe page title text
+- img background in home page title text
 - using thecatapi to get random cat and dog pictures (second project ever using api, but this api was wayy different in implementation than the first one)
 
 ## Screenshots
@@ -33,3 +33,5 @@ bhaw page (dog page)
     - moew effect: [sound garage](https://pixabay.com/users/sound_garage-47313534/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=306184)
     - bark effect: [u_5wgfa0ekjt](https://pixabay.com/users/u_5wgfa0ekjt-41084060/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=179915)
 
+> ### AI Usage
+> helped debug the onclick sound effects on the home page. needed to wait for the audio to complete before taking to the new page link. code for that (around 3-4 lines) is ai generated.
