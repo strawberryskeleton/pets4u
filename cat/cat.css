@@ -1,10 +1,15 @@
 
 :root {
     /* --primary: #9586ac; */
-    --secondary: #fdd6df;
+    /* --secondary: #fdd6df;
     --tertiary: #e1f3e8;
     --primary: #906aca;
-    --primary-2: #864fda;
+    --primary-2: #864fda; */
+
+    --secondary: #625a56;
+    --tertiary: #eae1d2;
+    --primary-2: #e4a35d;
+    --primary: #5a3e26;
 }
 
 *,
@@ -24,8 +29,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: url('../assets/cat-bg.jpeg');
-    background-size: cover;
+    background: url('../assets/cat-bg3.jpeg');
+    /* background-size: cover; */
 }
 
 
@@ -82,7 +87,7 @@ main .title {
     /* width: 100%; */
     height: 100%;
     border-radius: 12px;
-    border: 1px solid coral;
+    border: 1px solid var(--primary-2);
 }
 
 .api-div .btn-div {
@@ -116,15 +121,15 @@ footer {
     letter-spacing: 2px;
     /* background-color: cadetblue; */
     backdrop-filter: blur(5px);
-    background-color: var(--secondary);
-    color: var(--primary-2);
+    background-color: var(--primary-2);
+    color: var(--secondary);
     /* position: absolute;
     bottom: 0; */
 }
 
 footer a {
     text-decoration: none;
-    color: var(--primary-2);
+    color: var(--secondary);
     transition: all 0.2s ease-in;
 }
 
