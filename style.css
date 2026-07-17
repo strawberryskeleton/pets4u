@@ -5,6 +5,7 @@
     --text-font: "Fredoka", sans-serif;
 
     --title-color: #712e12;
+    --title-color-light: #8f543b;
     --text-color: #333;
     --text-color-light: #8f8f8f;
 }
@@ -79,14 +80,14 @@ main {
     top: 10%;
     backdrop-filter: blur(5px);
     border-radius: 50%;
-    color: var(--title-color);
+    color: var(--title-color-light);
     transition: all 0.2s ease-in;
     cursor: pointer;
 }
 
 .cat-side a:hover,
 .dog-side a:hover {
-    color: var(--text-color-light);
+    color: var(--title-color);
 } 
 
 /* .cat-side i {

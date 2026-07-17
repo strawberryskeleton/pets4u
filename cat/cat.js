@@ -12,6 +12,10 @@ imgDiv.addEventListener('mouseover', () => {
     meow.play()
 })
 
+document.addEventListener('keypress', () => {
+    displayAPIResult()
+})
+
 async function fetchFromAPI () {
     try {
         const response = await fetch('https://api.thecatapi.com/v1/images/search')

@@ -8,6 +8,10 @@ getNewBtn.addEventListener('click', () => {
     displayAPIResult()
 })
 
+document.addEventListener('keypress', () => {
+    displayAPIResult()
+})
+
 imgDiv.addEventListener('mouseover', () => {
     bark.play()
 })
