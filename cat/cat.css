@@ -44,14 +44,16 @@ main .title {
 .api-div .img-div {
     width: 100%;
     height: 30rem;
-    background-color: coral;
-    border-radius: 12px;
+    /* background-color: coral; */
+    /* border-radius: 12px; */
     margin-bottom: 1.5rem;
 }
 
 .api-div .img-div img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
+    border-radius: 12px;
+    border: 1px solid coral;
 }
 
 .api-div .btn-div {
